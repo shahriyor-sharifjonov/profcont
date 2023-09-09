@@ -1,0 +1,88 @@
+.info{
+    padding-top: 100px;
+    @include media(480){
+        padding-top: 54px;
+    }
+    &__title{
+        color: var(--main, #FE6130);
+        font-family: Gilroy;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 10px;
+        @include media(1400){
+            font-size: 64px;
+        }
+        @include media(480){
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+    }
+    &__p{
+        color: var(--black-text, #1F1F1F);
+        font-family: Gilroy;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        margin-bottom: 50px;
+        max-width: 711px;
+        @include media(1400){
+            font-size: 24px;
+            max-width: 413px;
+        }
+        @include media(480){
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+    &__row{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        @include media(480){
+            gap: 10px;
+        }
+    }
+    &__item{
+        border-radius: 10px;
+        background: var(--bg-for-items, #F4F4F4);
+        width: 413px;
+        height: 305px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 30px 43px 30px;
+        @include media(480){
+            width: 100%;
+            height: 330px;
+        }
+        &-num{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #fff;
+            color: var(--main, #FE6130);
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; 
+        }
+        &-p{
+            color: var(--black-text, #1F1F1F);
+            font-family: Gilroy;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            @include media(480){
+                font-size: 20px;
+            }
+        }
+    }
+}
