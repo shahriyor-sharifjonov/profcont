@@ -1,0 +1,32 @@
+doctype html 
+html(lang="en") 
+    head 
+        meta(charset="UTF-8") 
+        meta(http-equiv="X-UA-Compatible", content="IE=edge") 
+        meta(name="viewport", content="width=device-width, initial-scale=1.0") 
+        link(rel="stylesheet", href="css/style.min.css") 
+        title Прайс - Profcont 
+    body 
+        .wrapper 
+            include components/header 
+            +header 
+            main.main 
+                .breadcrumb 
+                    .breadcrumb__body.container 
+                        a(href="index.html").breadcrumb__link 
+                            span Главная 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4297 5.92999L20.4997 12L14.4297 18.07" stroke="#1F1F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#1F1F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        a(href="#!").breadcrumb__link.active 
+                            span Прайс 
+                .container 
+                    h1.title Как рассчитывается стоимость перевозки?
+                include components/table 
+                +table 
+                include components/form 
+                +form 
+            include components/footer 
+            +footer 
+        script(src="js/app.min.js") 
