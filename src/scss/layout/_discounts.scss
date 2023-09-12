@@ -1,0 +1,70 @@
+.discounts{
+    &__content{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        @include media(1400){
+            gap: 30px;
+        }
+    }
+    &__subtitle{
+        margin-top: 100px;
+        @include media(768){
+            margin-top: 60px;
+        }
+    }
+    &__item{
+        background: #F4F4F4;
+        border-radius: 10px;
+        width: 630px;
+        height: 395px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        @include media(768){
+            width: 100%;
+            padding: 40px 20px;
+        }
+        &-title{
+            min-height: 96px;
+            color: var(--black-text, #1F1F1F);
+            font-family: Gilroy;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            margin-bottom: 20px;
+            display: block;
+            @include media(480){
+                font-size: 24px;
+            }
+            span{
+                color: var(--main, #FE6130);
+            }
+        }
+        &-p{
+            color: var(--black-text, #1F1F1F);
+            font-family: Gilroy;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 160%;
+            flex: 1 1 auto;
+        }
+        &-btn{
+            border-radius: 10px;
+            background: var(--main, #FE6130);
+            padding: 13px 69px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white, #FFF);
+            font-family: Gilroy;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 160%;
+            text-decoration: none;
+        }
+    }
+}
