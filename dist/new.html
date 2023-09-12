@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230912204027"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230912210527"/>
     <title>Прайс - Profcont </title>
   </head>
   <body> 
@@ -122,7 +122,7 @@
           </div>
         </div>
       </main>
-            <footer class="footer">  
+            <footer class="footer">
               <div class="footer__body container"> 
                 <div class="footer__left"> <a class="footer__logo" href="index.html"><img src="img/logo-black.png" alt="" draggable="false"/></a><a class="footer__tel" href="tel:89265780889">8-(926)-578-08-89</a><a class="footer__tel" href="mailto:zakaz@profkont.ru">zakaz@profkont.ru</a>
                   <p class="footer__tel">140000, Московская обл, Люберецкий р-н, Люберцы г, Котельнический проезд, дом 27А</p>
@@ -187,7 +187,43 @@
                 </div>
               </div>
             </footer>
+                  <div class="popup" id="callback"> 
+                    <button class="popup-close popup__overlay" type="button"></button>
+                    <div class="popup__body">
+                      <button class="popup-close popup__close" type="button">
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.16998 14.8299L14.83 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.83 14.8299L9.16998 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                      </button>
+                      <p class="popup__title">Узнать стоимость</p>
+                      <form class="popup__content" action="#!"> 
+                        <input type="hidden" name="title" value="Узнать стоимость"/>
+                        <input class="popup__input input popup__input" type="text" name="name" placeholder="Ваше имя"/>
+                        <input class="popup__input input popup__input" type="text" name="lastname" placeholder="Фамилия"/>
+                        <input class="popup__input input popup__input" type="text" name="phone" placeholder="Телефон"/>
+                        <input class="popup__input input popup__input" type="text" name="date" placeholder="Удобное время для звонка"/>
+                        <button class="popup__btn btn popup__btn" type="submit">Записаться</button>
+                        <p class="popup__p">Отправляя заявку вы соглашаетесь<br/>с <a href="privacy.html">политикой конфиденциальности</a></p>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="popup" id="thanks"> 
+                    <button class="popup-close popup__overlay" type="button"></button>
+                    <div class="popup__body">
+                      <button class="popup-close popup__close" type="button">
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.16998 14.8299L14.83 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.83 14.8299L9.16998 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                      </button>
+                      <p class="thanks-title">Спасибо за вашу заявку!</p>
+                      <p class="thanks-p">Наш специалист скоро свяжется с вами</p>
+                    </div>
+                  </div>
     </div>
-    <script src="js/app.min.js?_v=20230912204027"> </script>
+    <script src="js/app.min.js?_v=20230912210527"> </script>
   </body>
 </html>

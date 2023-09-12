@@ -33,10 +33,11 @@ mixin contact()
                         </clipPath>
                         </defs>
                         </svg> 
-            .contact__content.form__inner 
-                input(type="text" placeholder="Имя").form__input.contact__input
-                input(type="text" placeholder="Фамилия").form__input.contact__input
-                input(type="text" placeholder="Телефон").form__input.contact__input
-                input(type="text" placeholder="Удобное время для звонка").form__input.contact__input
+            form(action="#!").contact__content.form__inner 
+                input(type="hidden" name="title" value="Доверьте перевозку вашего груза нам")
+                input(type="text" placeholder="Имя" name="name").form__input.contact__input
+                input(type="text" placeholder="Фамилия" name="lastname").form__input.contact__input
+                input(type="text" placeholder="Телефон" name="phone").form__input.contact__input
+                input(type="text" placeholder="Удобное время для звонка" name="date").form__input.contact__input
                 button(type="submit").form__btn.contact__btn Оставить заявку
                 p.contact__p Нажимая кнопку вы соглашаетсь с #[a(href="privacy.html") политикой конфединциальности]

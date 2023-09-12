@@ -4,8 +4,9 @@ mixin form()
             form(action="#!").form__inner 
                 h2.form__title Узнайте стоимость перевозки вашего груза 
                 .form__content 
-                    input(type="text" placeholder="Откуда").form__item.form__input 
-                    input(type="text" placeholder="Куда").form__item.form__input 
-                    input(type="text" placeholder="Вес груза (тн)").form__item.form__input 
-                    input(type="text" placeholder="Телефон").form__item.form__input 
+                    input(type="hidden" name="title" value="Узнайте стоимость перевозки вашего груза")
+                    input(type="text" placeholder="Откуда" name="from").form__item.form__input 
+                    input(type="text" placeholder="Куда" name="where").form__item.form__input 
+                    input(type="text" placeholder="Вес груза (тн)" name="ves").form__item.form__input 
+                    input(type="text" placeholder="Телефон" name="phone").form__item.form__input 
                     button(type='submit').form__item.form__btn Узнать стоимость 
