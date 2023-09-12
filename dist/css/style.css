@@ -819,6 +819,79 @@
   height: 58px;
 }
 
+.about {
+  padding-top: 100px;
+}
+
+.about__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.about__title {
+  color: var(--black-text, #1F1F1F);
+  /* h2 */
+  font-family: Gilroy;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.about__p {
+  max-width: 847px;
+  color: var(--black-text, #1F1F1F);
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about__item {
+  border-radius: 10px;
+  background: var(--bg-for-items, #F4F4F4);
+  width: 413px;
+  padding: 40px;
+}
+
+.about__item-title {
+  color: var(--main, #FE6130);
+  /* h3 */
+  font-family: Gilroy;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 14px;
+}
+
+.about__item-p {
+  color: var(--black-text, #1F1F1F);
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
 :root {
   --animation-smooth: 0.7s cubic-bezier(0.5, 0.5, 0, 1);
   --animation-primary: 0.4s cubic-bezier(0.5, 0.75, 0, 1);
@@ -1013,6 +1086,14 @@ ul {
     font-size: 24px;
     max-width: 413px;
   }
+
+  .about__title {
+    font-size: 48px;
+  }
+
+  .about__p {
+    max-width: 715px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1049,6 +1130,14 @@ ul {
 
   .form__title {
     font-size: 24px;
+  }
+
+  .about__p {
+    max-width: 479px;
+  }
+
+  .about__content {
+    gap: 30px;
   }
 }
 
@@ -1147,6 +1236,14 @@ ul {
     width: 100%;
     margin-top: 20px;
   }
+
+  .about__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 668px) {
@@ -1215,6 +1312,18 @@ ul {
   }
 
   .form__title {
+    font-size: 20px;
+  }
+
+  .about__top {
+    margin-bottom: 40px;
+  }
+
+  .about__title {
+    font-size: 40px;
+  }
+
+  .about__p {
     font-size: 20px;
   }
 }
