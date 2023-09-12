@@ -1128,6 +1128,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+  max-width: 550px;
 }
 
 .table__p:last-child {
@@ -1248,6 +1249,7 @@
 html,
 body {
   height: 100%;
+  min-width: 360px;
 }
 
 .wrapper {
@@ -1340,6 +1342,11 @@ ul {
   max-width: 738px;
 }
 
+.title.sm {
+  font-size: 32px;
+  padding-bottom: 0;
+}
+
 .privacy {
   padding-top: 100px;
   padding-bottom: 130px;
@@ -1391,6 +1398,74 @@ ul {
 .privacy__p a {
   color: #FE6130;
   text-decoration: underline;
+}
+
+.con {
+  margin-bottom: 60px;
+}
+
+.con__map {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+.con__map > div,
+.con__map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.con__bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+.con__p {
+  color: var(--black-text, #1F1F1F);
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  max-width: 470px;
+}
+
+.con__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 20px;
+}
+
+.con__tel {
+  text-decoration: none;
+  color: var(--black-text, #1F1F1F);
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.con__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
 
 @media (min-width: 576px) {
@@ -1565,6 +1640,11 @@ ul {
 
   .discounts__content {
     gap: 30px;
+  }
+
+  .title.sm {
+    font-size: 32px;
+    padding-bottom: 36px;
   }
 
   .title {
@@ -1777,12 +1857,33 @@ ul {
     padding: 40px 20px;
   }
 
+  .title.sm {
+    font-size: 24px;
+  }
+
   .title {
     font-size: 40px;
   }
 
   .privacy {
     padding-top: 60px;
+  }
+
+  .con__map {
+    height: 300px;
+  }
+
+  .con__bot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .con__info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1900,6 +2001,10 @@ ul {
 
   .discounts__item-title {
     font-size: 24px;
+  }
+
+  .title.sm {
+    font-size: 20px;
   }
 
   .title {
