@@ -26,13 +26,13 @@ export const init = () => {
             let formData = new FormData(form);
             form.classList.add('sending');
             
-            // let response = await fetch('/files/form-submit.php', {
-            //     method: 'POST',
-            //     body: formData
-            // });
-            // console.log(response);
-            // if(response.ok){
-                // let result = await response.json();
+            let response = await fetch('/files/form-submit.php', {
+                method: 'POST',
+                body: formData
+            });
+            console.log(response);
+            if(response.ok){
+                let result = await response.json();
                 form.classList.add('success');
                 form.classList.remove('sending');
                 form.reset();
@@ -42,10 +42,10 @@ export const init = () => {
                 })
                 const thanks = document.querySelector('.popup#thanks');
                 thanks.classList.add('active');
-            // }else{
-            //     alert("Ошибка");
-            //     form.classList.remove('sending');
-            // }
+            }else{
+                alert("Ошибка");
+                form.classList.remove('sending');
+            }
         })
     })
 
