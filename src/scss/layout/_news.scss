@@ -1,5 +1,8 @@
 .news{
     padding-top: 100px;
+    &-2{
+        padding-top: 0;
+    }
     &__header{
         display: flex;
         align-items: center;
@@ -114,6 +117,35 @@
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
+        }
+    }
+    &__nav{
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 60px;
+        &-item{
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            border-radius: 10px;
+            font-weight: 500;
+            color: var(--black-text, #1F1F1F);
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            line-height: normal;
+            background: var(--bg-for-items, #F4F4F4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            &.active{
+                color: var(--main, #FE6130);
+            }
+            &.disabled{
+                opacity: .5;
+            }
         }
     }
 }
