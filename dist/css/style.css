@@ -1711,7 +1711,7 @@ ul {
 }
 
 .popup__title span {
-  color: #00A9DA;
+  color: #FE6130;
 }
 
 .popup__input {
@@ -1755,6 +1755,19 @@ ul {
 
 .popup__p a {
   text-decoration: underline;
+}
+
+.popup__desc {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 40px;
+  opacity: 0.8;
+  margin-top: -20px;
 }
 
 .thanks-title {
@@ -2402,5 +2415,9 @@ ul {
 
   .popup__title {
     margin-bottom: 20px;
+  }
+
+  .popup__desc {
+    margin-top: -10px;
   }
 }

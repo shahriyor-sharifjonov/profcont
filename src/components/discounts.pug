@@ -4,16 +4,16 @@ mixin discounts()
             h1.title.discounts__title Разовые акции
             .discounts__content 
                 .discounts__item 
-                    p.discounts__item-title Скидка #[span 10%]#[br]с 16.00 до 09.00!
+                    p.discounts__item-title Скидка #[span 10%]#[br]с 16.00 до 09.00!
                     p.discounts__item-p Счастливые часы по будням — днем выгоднее!
-                    a(href="#!").discounts__item-btn Участвовать 
+                    button(type='button' data-target="discount1").open-popup.discounts__item-btn Участвовать 
                 .discounts__item 
                     p.discounts__item-title #[span + 1 час] к загрузке / выгрузке
                     p.discounts__item-p К первому заказу мы прибавим 1 час к загрузке / выгрузки
-                    a(href="#!").discounts__item-btn Участвовать 
+                    button(type='button' data-target="discount2").open-popup.discounts__item-btn Участвовать 
             h2.title.discounts__subtitle Бессрочные акции
             .discounts__content 
                 .discounts__item 
                     p.discounts__item-title Cash back #[span 5%] за рекомендацию
                     p.discounts__item-p Рекомендуйте нас друзьям и получите 5% cash back#[br]от договора. Друзья также получат 5% скидку на все работы.
-                    a(href="#!").discounts__item-btn Участвовать 
+                    button(type='button' data-target="discount3").open-popup.discounts__item-btn Участвовать 

@@ -17,6 +17,59 @@ mixin popup()
                 input(type="text" name="date" placeholder="Удобное время для звонка").popup__input.input.popup__input 
                 button(type="submit").popup__btn.btn.popup__btn Записаться
                 p.popup__p Отправляя заявку вы соглашаетесь#[br]с #[a(href="privacy.html") политикой конфиденциальности]
+    .popup#discount1 
+        button(type='button').popup-close.popup__overlay
+        .popup__body
+            button(type='button').popup-close.popup__close 
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.16998 14.8299L14.83 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.83 14.8299L9.16998 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            p.popup__title Скидка #[span 10%] с 16.00 до 09.00!
+            p.popup__desc Заполните форму заявки, чтобы получить#[br]скидку 10% к заказу
+            form(action="#!").popup__content 
+                input(type="hidden" name="title" value="Скидка 10% с 16.00 до 09.00!") 
+                input(type="text" name="name" placeholder="Ваше имя").popup__input.input.popup__input 
+                input(type="text" name="phone" placeholder="Ваш телефон").popup__input.input.popup__input 
+                button(type="submit").popup__btn.btn.popup__btn Записаться
+                p.popup__p Отправляя заявку вы соглашаетесь#[br]с #[a(href="privacy.html") политикой конфиденциальности]
+    .popup#discount2 
+        button(type='button').popup-close.popup__overlay
+        .popup__body
+            button(type='button').popup-close.popup__close 
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.16998 14.8299L14.83 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.83 14.8299L9.16998 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            p.popup__title #[span + 1 час] к загрузке / выгрузке
+            p.popup__desc Заполните форму заявки, чтобы получить 1#[br]час к загрузке / выгрузки к первому заказу
+            form(action="#!").popup__content 
+                input(type="hidden" name="title" value="+ 1 час к загрузке / выгрузке") 
+                input(type="text" name="name" placeholder="Ваше имя").popup__input.input.popup__input 
+                input(type="text" name="phone" placeholder="Ваш телефон").popup__input.input.popup__input 
+                button(type="submit").popup__btn.btn.popup__btn Записаться
+                p.popup__p Отправляя заявку вы соглашаетесь#[br]с #[a(href="privacy.html") политикой конфиденциальности]
+    .popup#discount3 
+        button(type='button').popup-close.popup__overlay
+        .popup__body
+            button(type='button').popup-close.popup__close 
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.16998 14.8299L14.83 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.83 14.8299L9.16998 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            p.popup__title Cash back #[span 5%] за рекомендацию
+            p.popup__desc Отправляйте заявку для участия в акции. Для этого заполните форму заявки и укажите кому вы нас порекомендовали.
+            form(action="#!").popup__content 
+                input(type="hidden" name="title" value="Cash back 5% за рекомендацию") 
+                input(type="text" name="name" placeholder="Ваше имя").popup__input.input.popup__input 
+                input(type="text" name="phone" placeholder="Ваш телефон").popup__input.input.popup__input 
+                input(type="text" name="refname" placeholder="Имя и фамилия того, кому вы нас порекомендовали").popup__input.input.popup__input 
+                input(type="text" name="refphone" placeholder="Телефон того, кому вы нас порекомендовали").popup__input.input.popup__input 
+                button(type="submit").popup__btn.btn.popup__btn Записаться
+                p.popup__p Отправляя заявку вы соглашаетесь#[br]с #[a(href="privacy.html") политикой конфиденциальности]
     .popup#thanks 
         button(type='button').popup-close.popup__overlay
         .popup__body

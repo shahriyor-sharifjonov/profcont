@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230912210527"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230912214809"/>
     <title>Прайс - Profcont </title>
   </head>
   <body> 
@@ -108,15 +108,18 @@
             <div class="detail__side"> 
               <div class="discounts__item"> 
                 <p class="discounts__item-title">Скидка <span>10%</span><br/>с 16.00 до 09.00!</p>
-                <p class="discounts__item-p">Счастливые часы по будням — днем выгоднее!</p><a class="discounts__item-btn" href="#!">Участвовать </a>
+                <p class="discounts__item-p">Счастливые часы по будням — днем выгоднее!</p>
+                <button class="open-popup discounts__item-btn" type="button" data-target="discount1">Участвовать </button>
               </div>
               <div class="discounts__item"> 
                 <p class="discounts__item-title"><span>+ 1 час</span> к загрузке / выгрузке</p>
-                <p class="discounts__item-p">К первому заказу мы прибавим 1 час к загрузке / выгрузки</p><a class="discounts__item-btn" href="#!">Участвовать </a>
+                <p class="discounts__item-p">К первому заказу мы прибавим 1 час к загрузке / выгрузки</p>
+                <button class="open-popup discounts__item-btn" type="button" data-target="discount2">Участвовать </button>
               </div>
               <div class="discounts__item"> 
                 <p class="discounts__item-title">Cash back <span>5%</span> за рекомендацию</p>
-                <p class="discounts__item-p">Рекомендуйте нас друзьям и получите 5% cash back<br/>от договора. Друзья также получат 5% скидку на все работы.</p><a class="discounts__item-btn" href="#!">Участвовать </a>
+                <p class="discounts__item-p">Рекомендуйте нас друзьям и получите 5% cash back<br/>от договора. Друзья также получат 5% скидку на все работы.</p>
+                <button class="open-popup discounts__item-btn" type="button" data-target="discount3">Участвовать </button>
               </div>
             </div>
           </div>
@@ -209,6 +212,71 @@
                       </form>
                     </div>
                   </div>
+                  <div class="popup" id="discount1"> 
+                    <button class="popup-close popup__overlay" type="button"></button>
+                    <div class="popup__body">
+                      <button class="popup-close popup__close" type="button">
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.16998 14.8299L14.83 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.83 14.8299L9.16998 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                      </button>
+                      <p class="popup__title">Скидка <span>10%</span> с 16.00 до 09.00!</p>
+                      <p class="popup__desc">Заполните форму заявки, чтобы получить<br/>скидку 10% к заказу</p>
+                      <form class="popup__content" action="#!"> 
+                        <input type="hidden" name="title" value="Скидка 10% с 16.00 до 09.00!"/>
+                        <input class="popup__input input popup__input" type="text" name="name" placeholder="Ваше имя"/>
+                        <input class="popup__input input popup__input" type="text" name="phone" placeholder="Ваш телефон"/>
+                        <button class="popup__btn btn popup__btn" type="submit">Записаться</button>
+                        <p class="popup__p">Отправляя заявку вы соглашаетесь<br/>с <a href="privacy.html">политикой конфиденциальности</a></p>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="popup" id="discount2"> 
+                    <button class="popup-close popup__overlay" type="button"></button>
+                    <div class="popup__body">
+                      <button class="popup-close popup__close" type="button">
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.16998 14.8299L14.83 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.83 14.8299L9.16998 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                      </button>
+                      <p class="popup__title"><span>+ 1 час</span> к загрузке / выгрузке</p>
+                      <p class="popup__desc">Заполните форму заявки, чтобы получить 1<br/>час к загрузке / выгрузки к первому заказу</p>
+                      <form class="popup__content" action="#!"> 
+                        <input type="hidden" name="title" value="+ 1 час к загрузке / выгрузке"/>
+                        <input class="popup__input input popup__input" type="text" name="name" placeholder="Ваше имя"/>
+                        <input class="popup__input input popup__input" type="text" name="phone" placeholder="Ваш телефон"/>
+                        <button class="popup__btn btn popup__btn" type="submit">Записаться</button>
+                        <p class="popup__p">Отправляя заявку вы соглашаетесь<br/>с <a href="privacy.html">политикой конфиденциальности</a></p>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="popup" id="discount3"> 
+                    <button class="popup-close popup__overlay" type="button"></button>
+                    <div class="popup__body">
+                      <button class="popup-close popup__close" type="button">
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.16998 14.8299L14.83 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.83 14.8299L9.16998 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                      </button>
+                      <p class="popup__title">Cash back <span>5%</span> за рекомендацию</p>
+                      <p class="popup__desc">Отправляйте заявку для участия в акции. Для этого заполните форму заявки и укажите кому вы нас порекомендовали.</p>
+                      <form class="popup__content" action="#!"> 
+                        <input type="hidden" name="title" value="Cash back 5% за рекомендацию"/>
+                        <input class="popup__input input popup__input" type="text" name="name" placeholder="Ваше имя"/>
+                        <input class="popup__input input popup__input" type="text" name="phone" placeholder="Ваш телефон"/>
+                        <input class="popup__input input popup__input" type="text" name="refname" placeholder="Имя и фамилия того, кому вы нас порекомендовали"/>
+                        <input class="popup__input input popup__input" type="text" name="refphone" placeholder="Телефон того, кому вы нас порекомендовали"/>
+                        <button class="popup__btn btn popup__btn" type="submit">Записаться</button>
+                        <p class="popup__p">Отправляя заявку вы соглашаетесь<br/>с <a href="privacy.html">политикой конфиденциальности</a></p>
+                      </form>
+                    </div>
+                  </div>
                   <div class="popup" id="thanks"> 
                     <button class="popup-close popup__overlay" type="button"></button>
                     <div class="popup__body">
@@ -224,6 +292,6 @@
                     </div>
                   </div>
     </div>
-    <script src="js/app.min.js?_v=20230912210527"> </script>
+    <script src="js/app.min.js?_v=20230912214809"> </script>
   </body>
 </html>
