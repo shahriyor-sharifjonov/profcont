@@ -1,0 +1,78 @@
+.form{
+    padding-top: 100px;
+    &__inner{
+        padding: 40px 40px 65px 40px;
+        border-radius: 20px;
+        background: var(--black-text, #1F1F1F);
+        @include media(992){
+            padding: 40px 24px 40px 24px;
+        }
+        @include media(768){
+            padding: 40px 40px 50px 40px;
+        }
+        @include media(480){
+            padding: 40px 25px 40px 25px;
+        }
+    }
+    &__title{
+        color: var(--white, #FFF);
+        margin-bottom: 30px;
+        font-family: Gilroy;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        @include media(992){
+            font-size: 24px;
+        }
+        @include media(768){
+            text-align: center;
+        }
+        @include media(480){
+            font-size: 20px;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    &__input{
+        border-radius: 10px;
+        background: var(--white, #FFF);
+        padding: 17px;
+        color: var(--black-text, #1F1F1F);
+        font-family: Gilroy;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        border: none;
+        width: 220px;
+        height: 58px;
+        @include media(768){
+            width: 100%;
+        }
+    }
+    &__btn{
+        border-radius: 10px;
+        background: var(--main, #FE6130);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        color: var(--white, #FFF);
+        font-family: Gilroy;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%;
+        width: 280px;
+        height: 58px;
+        @include media(768){
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}

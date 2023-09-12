@@ -1,0 +1,11 @@
+mixin form() 
+    .section.form#form 
+        .form__body.container 
+            form(action="#!").form__inner 
+                h2.form__title Узнайте стоимость перевозки вашего груза 
+                .form__content 
+                    input(type="text" placeholder="Откуда").form__item.form__input 
+                    input(type="text" placeholder="Куда").form__item.form__input 
+                    input(type="text" placeholder="Вес груза (тн)").form__item.form__input 
+                    input(type="text" placeholder="Телефон").form__item.form__input 
+                    button(type='submit').form__item.form__btn Узнать стоимость 

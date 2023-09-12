@@ -749,6 +749,76 @@
   line-height: 150%;
 }
 
+.form {
+  padding-top: 100px;
+}
+
+.form__inner {
+  padding: 40px 40px 65px 40px;
+  border-radius: 20px;
+  background: var(--black-text, #1F1F1F);
+}
+
+.form__title {
+  color: var(--white, #FFF);
+  margin-bottom: 30px;
+  font-family: Gilroy;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.form__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form__input {
+  border-radius: 10px;
+  background: var(--white, #FFF);
+  padding: 17px;
+  color: var(--black-text, #1F1F1F);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  border: none;
+  width: 220px;
+  height: 58px;
+}
+
+.form__btn {
+  border-radius: 10px;
+  background: var(--main, #FE6130);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  color: var(--white, #FFF);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  width: 280px;
+  height: 58px;
+}
+
 :root {
   --animation-smooth: 0.7s cubic-bezier(0.5, 0.5, 0, 1);
   --animation-primary: 0.4s cubic-bezier(0.5, 0.75, 0, 1);
@@ -972,6 +1042,14 @@ ul {
   .intro__img {
     display: none;
   }
+
+  .form__inner {
+    padding: 40px 24px 40px 24px;
+  }
+
+  .form__title {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1052,6 +1130,23 @@ ul {
   .intro__btn {
     margin-bottom: 60px;
   }
+
+  .form__inner {
+    padding: 40px 40px 50px 40px;
+  }
+
+  .form__title {
+    text-align: center;
+  }
+
+  .form__input {
+    width: 100%;
+  }
+
+  .form__btn {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 668px) {
@@ -1112,6 +1207,14 @@ ul {
   }
 
   .info__item-p {
+    font-size: 20px;
+  }
+
+  .form__inner {
+    padding: 40px 25px 40px 25px;
+  }
+
+  .form__title {
     font-size: 20px;
   }
 }
