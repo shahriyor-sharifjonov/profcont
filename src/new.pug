@@ -1,0 +1,63 @@
+doctype html 
+html(lang="en") 
+    head 
+        meta(charset="UTF-8") 
+        meta(http-equiv="X-UA-Compatible", content="IE=edge") 
+        meta(name="viewport", content="width=device-width, initial-scale=1.0") 
+        link(rel="stylesheet", href="css/style.min.css") 
+        title Прайс - Profcont 
+    body 
+        .wrapper 
+            include components/header 
+            +header 
+            main.main 
+                .breadcrumb 
+                    .breadcrumb__body.container 
+                        a(href="index.html").breadcrumb__link 
+                            span Главная 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4297 5.92999L20.4997 12L14.4297 18.07" stroke="#1F1F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#1F1F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        a(href="news.html").breadcrumb__link 
+                            span Новости 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4297 5.92999L20.4997 12L14.4297 18.07" stroke="#1F1F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#1F1F1F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        a(href="#!").breadcrumb__link.active 
+                            span Из Москвы в Норильск через Красноярск 
+                .container
+                    h1.title Из Москвы в Норильск#[br]через Красноярск
+                    p.date 26.06.2023
+                    .images-container  
+                        .images 
+                            .images__item.images__item-1
+                                img(src="@img/image-1.png", alt="" draggable="false")
+                            .images__item.images__item-2 
+                                img(src="@img/image-2.png", alt="" draggable="false")
+                    .detail 
+                        .detail__info 
+                            p.detail__p Норильск – уникальный город на севере Красноярского края, где речной порт (Дудинка) работает круглый год. В зимний сезон при закрытии речной навигации по Енисею единственный маршрут доставки контейнеров проходит через Северный Морской Путь. #[br]#[br]Каждый год к началу летнего сезона возобновляются отправления грузов в контейнерах на Норильск с перевалкой в Красноярске и последующим речным фрахтом до порта Дудинка. Транзитное время прямого контейнерного поезда по маршруту Москва – Красноярск (станция Базаиха) составляет 5 суток. Далее автотранспортом контейнеры перевозятся в Красноярский речной порт. Формирование судов производится каждую неделю и находится в ведении Енисейского речного пароходства. Стоимость перевозки складывается из нескольких факторов. Среди них: характер груза, его вес, тип контейнера, а также его собственность. #[br]#[br]При необходимости возврата порожнего контейнера после выгрузки назад в Красноярск конечная ставка за перевозку увеличивается на величину обратного речного фрахта. Невозвратный же контейнер остается в Норильске у грузополучателя, а общая стоимость перевозки в этом случае становится ниже. #[br]#[br]Летняя речная навигация по реке Енисей функционирует до 150 суток ежегодно и закрывается октябре до появления ледостава. Конечное звено контейнерной перевозки пролегает от порта Дудинка до Норильска и составляет 90км по автотрассе. Общее время доставки из Москвы в Норильск «от двери до двери» составляет 20-30 суток, в зависимости от быстроты формирования поезда в Москве, загруженности речного порта в Красноярске, а также расписания выхода судов.
+                            a(href="#top").detail__btn 
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.90625 12.76L15.9996 4.66668L24.0929 12.76" stroke="#FE6130" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 27.3333L16 4.89325" stroke="#FE6130" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        .detail__side 
+                            .discounts__item 
+                                p.discounts__item-title Скидка #[span 10%]#[br]с 16.00 до 09.00!
+                                p.discounts__item-p Счастливые часы по будням — днем выгоднее!
+                                a(href="#!").discounts__item-btn Участвовать 
+                            .discounts__item 
+                                p.discounts__item-title #[span + 1 час] к загрузке / выгрузке
+                                p.discounts__item-p К первому заказу мы прибавим 1 час к загрузке / выгрузки
+                                a(href="#!").discounts__item-btn Участвовать 
+                            .discounts__item 
+                                p.discounts__item-title Cash back #[span 5%] за рекомендацию
+                                p.discounts__item-p Рекомендуйте нас друзьям и получите 5% cash back#[br]от договора. Друзья также получат 5% скидку на все работы.
+                                a(href="#!").discounts__item-btn Участвовать 
+                
+            include components/footer 
+            +footer 
+        script(src="js/app.min.js") 

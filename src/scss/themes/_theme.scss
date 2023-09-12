@@ -9,6 +9,7 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Gilroy', sans-serif;
+    scroll-behavior: smooth;
     &:focus,
     &:active{
         outline: none;
@@ -101,6 +102,25 @@ ul{
     }
     @include media(480){
         font-size: 32px;
+    }
+}
+.date{
+    color: var(--main, #FE6130);
+    text-align: left;
+    font-family: Gilroy;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+    margin-bottom: 30px;
+    @include media(1400){
+        font-size: 24px;
+    }
+    @include media(768){
+        font-size: 20px;
+    }
+    @include media(480){
+        font-size: 16px;
     }
 }
 .privacy{
@@ -214,5 +234,94 @@ ul{
     &__soc{
         display: flex;
         gap: 20px;
+    }
+}
+.images-container{
+    width: 100%;
+    overflow-x: auto;
+    line-height: 0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.images{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    min-width: max-content;
+    @include media(1400){
+        gap: 15px;
+    }
+    @include media(768){
+        gap: 10px;
+    }
+    &__item{
+        line-height: 0;
+        @include media(1400){
+            height: 329px;
+        }
+        @include media(768){
+            height: 230px;
+        }
+        @include media(480){
+            height: 130px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @include media(1400){
+        gap: 15px;
+    }
+    &__info{
+        display: block;
+        max-width: 738px;
+        width: 100%;
+        @include media(1400){
+            max-width: 553px;
+        }
+    }
+    &__p{
+        color: var(--black-text, #1F1F1F);
+        /* text_24_news */
+        font-family: Gilroy;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+        @include media(1400){
+            font-size: 20px;
+        }
+        @include media(480){
+            font-size: 16px;
+        }
+    }
+    &__btn{
+        margin-top: 30px;
+        border-radius: 10px;
+        width: 88px;
+        height: 88px;
+        background: var(--bg-for-items, #F4F4F4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__side{
+        max-width: 522px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @include media(992){
+            display: none;
+        }
+        .discounts__item{
+            width: 100%;
+        }
     }
 }
